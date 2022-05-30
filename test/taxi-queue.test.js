@@ -167,22 +167,11 @@ describe('The taxi queue app', function() {
 		taxiQueue.joinQueue();
 		taxiQueue.joinQueue();
 		taxiQueue.joinQueue();
-		taxiQueue.joinQueue(); // 1
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
-		taxiQueue.joinQueue();
+
 
 		// data before a taxi departs
-		assert.equal(27, taxiQueue.queueLength());
-		assert.equal(27, taxiQueue.queueLength());
+		assert.equal(15, taxiQueue.queueLength());
+		assert.equal(15, taxiQueue.queueLength());
 
 		// this function call should do nothing as there is no taxis in the taxi queue
 
@@ -190,8 +179,8 @@ describe('The taxi queue app', function() {
 
 
 		// data after a taxi departed
-		assert.equal(15, taxiQueue.queueLength());
-		assert.equal(15, taxiQueue.queueLength());
+		assert.equal(3, taxiQueue.queueLength());
+		assert.equal(3, taxiQueue.queueLength());
 
 	});
 });

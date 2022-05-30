@@ -12,6 +12,7 @@ function TaxiQueue() {
 		if (peaopleJoin > 0){
 			peaopleJoin --;
 		}
+		return peaopleJoin;
 
 	}
 
@@ -25,6 +26,10 @@ function TaxiQueue() {
 		taxiJoin --;
 		peaopleJoin -= 12;
 		}
+      return {
+		  peaopleJoin,
+		  taxiJoin
+	  }
 
 	}
 	function queueLength() {
