@@ -29,8 +29,10 @@ function TaxiQueue() {
 
 	function taxiDepart(){
 		if(peaopleJoin >= 12){
-		taxiJoin --,
 		peaopleJoin -= 12;
+		}
+		else if (taxiJoin > 0 ){
+			 taxiJoin --;
 		}
 
 	}
