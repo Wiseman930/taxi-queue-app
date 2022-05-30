@@ -20,18 +20,6 @@ function TaxiQueue() {
        taxiJoin ++;
 
 	}
-
-	function taxiDepart(){
-		if(peaopleJoin >= 12){
-		taxiJoin --;
-		peaopleJoin -= 12;
-		}
-      return {
-		  peaopleJoin,
-		  taxiJoin
-	  }
-
-	}
 	function queueLength() {
 		return peaopleJoin;
 	}
@@ -39,6 +27,13 @@ function TaxiQueue() {
 		return taxiJoin;
 	}
 
+	function taxiDepart(){
+		if(peaopleJoin >= 12){
+		taxiJoin --,
+		peaopleJoin -= 12;
+		}
+
+	}
 
 	return {
 		joinQueue,
